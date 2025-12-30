@@ -1,0 +1,42 @@
+{
+  "name": "mudrex-trading-sdk",
+  "version": "1.0.0",
+  "description": "Unofficial Node.js SDK for Mudrex Futures Trading API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "mudrex",
+    "trading",
+    "api",
+    "sdk",
+    "futures"
+  ],
+  "author": "DecentralizedJM",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DecentralizedJM/mudrex-nodejs-sdk.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
