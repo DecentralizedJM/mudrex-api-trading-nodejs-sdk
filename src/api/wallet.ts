@@ -16,14 +16,14 @@ export class WalletApi {
    * Get spot wallet balance
    */
   public async getSpotBalance(): Promise<WalletBalance> {
-    return this.client.get<WalletBalance>('/wallet/balance?type=SPOT');
+    return this.client.post<WalletBalance>('/wallet/funds', null);
   }
 
   /**
    * Get futures wallet balance
    */
   public async getFuturesBalance(): Promise<FuturesBalance> {
-    return this.client.get<FuturesBalance>('/wallet/balance?type=FUTURES');
+    return this.client.get<FuturesBalance>('/futures/funds');
   }
 
   /**
