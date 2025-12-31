@@ -28,6 +28,12 @@ export enum PositionSide {
   SHORT = 'SHORT'
 }
 
+export enum PositionStatus {
+  OPEN = 'OPEN',
+  CLOSED = 'CLOSED',
+  LIQUIDATED = 'LIQUIDATED'
+}
+
 export enum RiskTriggerType {
   STOP_LOSS = 'STOP_LOSS',
   TAKE_PROFIT = 'TAKE_PROFIT'

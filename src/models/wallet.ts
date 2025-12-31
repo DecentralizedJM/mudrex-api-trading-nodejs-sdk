@@ -4,15 +4,18 @@
 
 export interface WalletBalance {
   total: string;
-  available: string;
-  locked: string;
+  withdrawable: string;
+  invested: string;
+  rewards: string;
+  coin_investable: string;
+  coinset_investable: string;
+  vault_investable: string;
 }
 
 export interface FuturesBalance {
-  total: string;
-  available: string;
-  locked: string;
-  unrealizedPnl: string;
+  balance: string;
+  locked_amount: string;
+  first_time_user: boolean;
 }
 
 export interface TransferResult {
